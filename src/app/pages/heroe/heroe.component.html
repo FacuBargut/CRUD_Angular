@@ -1,1 +1,66 @@
-<p>heroe works!</p>
+<h1>Héroe <small>Nombre del héroe</small></h1>
+<hr>
+
+<div class="row text-right">
+    <div class="col">
+        <button class="btn btn-danger"
+                routerLink="/heroes"    
+        >
+            <i class="fa fa-arrow-left"></i>
+            Regresar
+        </button>
+    </div>
+</div>
+
+<div class="row animated fadeIn faster">
+    <div class="col">
+        <form>
+            <div class="form-group">
+                <label for="" class="">Firebase ID</label>
+                <input type="text"
+                       class="form-control"
+                       disabled="disabled"
+                       placeholder="Firabase ID"
+                       >
+                <small class="form-text text-muted">Este campo es autogenerado</small>
+            </div>
+        
+            <div class="form-group">
+                <label for="" class="">Nombre</label>
+                <input type="text"
+                        class="form-control"
+                        placeholder="Nombre del héroe"
+                        required
+                        >
+            </div>
+            <div class="form-group">
+                <label for="" class="">Poder</label>
+                <input type="text"
+                        class="form-control"
+                        placeholder="Poder del héroe"
+                        >
+            </div>
+            <div class="form-group">
+                <label for="" class="">Estado</label>
+                <br>
+                <button class="btn btn-outline-success w-50" type="button">
+                    <i class="fa fa-smile-wink"></i>
+                    Vivo
+                </button>
+                <button class="btn btn-outline-danger w-50" type="button">
+                        <i class="fa fa-dizzy"></i>
+                        Muerto
+                </button>
+            </div>
+
+            <hr>
+
+            <div class="form-group text-center">
+                <button type="submit"
+                        class="btn btn-primary w-25">
+                    <i class="fa fa-save"></i>
+                    Guardar
+                </button>
+            </div>
+    </form>
+</div>
