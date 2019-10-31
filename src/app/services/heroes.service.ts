@@ -25,5 +25,19 @@ export class HeroesService {
 
   }
 
+  ActualizarHeroe( heroe: HeroeModel){
+
+    const heroeTemp = {
+      //Toma todas las propiedades del heroe y las pone en heroeTemp
+      ...heroe
+    };
+
+    delete heroeTemp.id;
+
+    return this.http.put(`${ this.url }/heroes/${ heroe.id }.json`, heroeTemp);
+
+
+  }
+
 
 }
